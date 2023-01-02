@@ -9,7 +9,7 @@ function Users() {
     <div>
       <ul>
         {users.map((user) => (
-          <li key={user.username}>{user.username} : {user.hometown}</li>
+          <li key={user.username}>{user.username} : {user.</li>
         ))}
       </ul>
       <p>Total Users: {userCount}</p>

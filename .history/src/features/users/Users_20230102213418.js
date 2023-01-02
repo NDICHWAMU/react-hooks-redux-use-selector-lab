@@ -4,15 +4,15 @@ import {useSelector} from "react-redux";
 function Users() {
   const users = useSelector(state=> state.users)
   console.log(users);
-  const userCount= useSelector(state => state.users.length)
+  const userCount= useSelector
   return (
     <div>
       <ul>
-        {users.map((user) => (
-          <li key={user.username}>{user.username} : {user.hometown}</li>
+        {users.map(user=>(
+          <li key={user.username}>{user.username}</li>
         ))}
+        
       </ul>
-      <p>Total Users: {userCount}</p>
     </div>
   );
 }

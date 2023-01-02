@@ -8,11 +8,11 @@ function Users() {
   return (
     <div>
       <ul>
-        {users.map((user) => (
-          <li key={user.username}>{user.username} : {user.hometown}</li>
-        ))}
+        {users.map(user=>(
+          <li key={user.username}>{user.username}</li>
+        ))}      
       </ul>
-      <p>Total Users: {userCount}</p>
+      <p>{userCount}</p>
     </div>
   );
 }

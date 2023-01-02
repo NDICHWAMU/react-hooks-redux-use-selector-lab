@@ -9,7 +9,6 @@ import usersReducer from "./features/users/usersSlice";
 const store = createStore(
   usersReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() 
-  // allows for redux chrome extension
 );
 
 ReactDOM.render(
